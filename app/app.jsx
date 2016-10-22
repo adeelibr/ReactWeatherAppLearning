@@ -9,7 +9,7 @@ import ContactPage from './components/ContactPage';
 import ExamplesPage from './components/ExamplesPage';
 
 require('style!css!foundation-sites/dist/foundation.min.css');
-require('style!css!./styles/app.css');
+require('style!css!sass!./styles/app.scss');
 $(document).foundation();
 
 let App = React.createClass({
