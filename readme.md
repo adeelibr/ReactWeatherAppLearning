@@ -1,5 +1,5 @@
 React Weather Application
 
--- Uses Webpack for bundling
--- npm run buildw (For webpack compiling)
--- node server.js (For runnign server) 
+-- Uses Webpack for bundling <br/>
+-- npm run buildw (For webpack compiling) <br/>
+-- node server.js (For runnign server) <br/>
