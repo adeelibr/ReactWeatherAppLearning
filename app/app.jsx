@@ -6,6 +6,7 @@ import Main from './components/Main';
 import WeatherPage from './components/WeatherPage';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
+import ExamplesPage from './components/ExamplesPage';
 
 require('style!css!foundation-sites/dist/foundation.min.css');
 $(document).foundation();
@@ -18,6 +19,7 @@ let App = React.createClass({
           <IndexRoute component={WeatherPage}/>
           <Route path="/about" component={AboutPage}/>
           <Route path="/contact" component={ContactPage}/>
+          <Route path="/examples" component={ExamplesPage}/>
         </Route>
       </Router>
     );
