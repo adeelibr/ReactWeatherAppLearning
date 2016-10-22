@@ -7,6 +7,9 @@ import WeatherPage from './components/WeatherPage';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 
+require('style!css!foundation-sites/dist/foundation.min.css');
+$(document).foundation();
+
 let App = React.createClass({
   render: function () {
     return (
