@@ -14,10 +14,28 @@ let WeatherPage = React.createClass({
     }
   },
 
+  componentDidMount() {
+    let location = this.props.location.query.location;
+    if (location && location.length > 0) {
+      this.handleSearch(location);
+      window.location.hash = '#/';
+    }
+  },
+
+  componentWillReceiveProps(newProps) {
+    let location = newProps.location.query.location;
+    if (location && location.length > 0) {
+      this.handleSearch(location);
+      window.location.hash = '#/';
+    }
+  },
+
   handleSearch(location) {
     var that = this;
     this.setState({
       isLoading: true,
+      location: undefined,
+      temp: undefined,
       errorMsg: undefined
     });
     openWeatherMap.getTemerature(location)
