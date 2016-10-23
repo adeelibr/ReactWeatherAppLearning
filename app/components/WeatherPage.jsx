@@ -46,6 +46,7 @@ let WeatherPage = React.createClass({
         temperature: temperature
       });
     }, function (e) {
+      console.log(e);
       that.setState({
         isLoading: false,
         errorMsg: e.message
